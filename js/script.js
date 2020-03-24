@@ -14,7 +14,7 @@ function onLoad(e) {
       {data.map(el => (
         <div className="respondent">
           <img className="portret" src={host + "/foto/" + el.f} alt={el.p} />
-          <div className={el.o == "NE" && el.o0 =="NE" ? "bio cervene" : el.o == "ANO" && el.o0 == "ANO" ? "bio zelene" :"bio"}>
+          <div className="bio">
             <div className="jmeno">{`${el.j} ${el.p}`}</div>
             <div className="vek">{el.s.length > 0 ? el.s : ""}</div>
           </div>
